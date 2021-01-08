@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
-    // Your code here...
+    var firstNumber = "";
+    $(".number").on("click", function(event){
+        event.preventDefault();
+        firstNumber += this.value;
+        $("#first-number").text(firstNumber);
+    })
     
     
 });
